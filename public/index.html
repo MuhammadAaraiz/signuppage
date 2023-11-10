@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+   
+    <link rel="stylesheet" href="style.css">
+    <title>Sign up page</title>
+</head>
+<body>
+
+
+
+<div class="container" id="container">
+<div class="form-container sign-up">
+    <div class="form">
+   
+<h1 class="signinhead">Sign in </h1>
+<div class="social-icons">
+    <a class="icons">
+        <i onclick="loginWithGoogle()" class="fa-brands fa-google-plus-g"></i>
+    </a>
+    <a href="" class="icons">
+        <i onclick="github()" class="fa-brands fa-square-github"></i>
+    </a>
+</div>
+<span>or use your email Password
+</span>
+<input type="text"  id="signinmail" placeholder="Enter Your email">
+<input type="password"  id="signinpass" placeholder="Enter Your password">
+<button id="myButton1" onclick="showpassword()" > Show Password </button>
+<a onclick="forgetpass()" href="#" >Forget Password?</a>
+<button class="signinbtn" onclick="signin()">Sign In</button>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="form-container sign-in">
+    <div class="form">
+    
+        <h1>Create Acccount</h1>
+        <div class="social-icons">
+            <!-- <a onclick="loginWithGoogle()" href="#" class="icons">
+                <i class="fa-brands fa-google-plus-g"></i>
+            </a>
+            <a href="#" class="icons">
+                <i onclick="github()"   class="fa-brands fa-square-github"></i>
+            </a> -->
+        </div>
+        <span> Use your email for registeration
+        </span>
+        <input type="text"  id="signupmail" placeholder="Enter Your email">
+        <input type="password"  id="signuppass" placeholder="Enter Your password">
+  <button  onclick="showpass()" id="myButton" > Show Password </button>
+        <button onclick="signup()">Sign Up</button>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="toggle-container">
+<div class="toggle">
+    <div class="toggle-panel toggle-left">
+<h1>Welcome Back!</h1>
+<p>Enter Your Personal Details to use all of site features</p>
+<button onclick="loginbtn()" class="hidden" id="login">Sign Up</button>
+    </div>
+
+    <div class="toggle-panel toggle-right">
+        <h1>Hello User!</h1>
+        <p>Register With Your Personal Details to use all of site features  </p>
+        <button onclick="signupbtn()" class="hidden" id="register">Sign In </button>
+            </div>
+        
+
+</div>
+</div>
+
+
+
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://kit.fontawesome.com/5ea85566ae.js" crossorigin="anonymous"></script>
+<script src="app.js"></script>
+</body>
+</html>
